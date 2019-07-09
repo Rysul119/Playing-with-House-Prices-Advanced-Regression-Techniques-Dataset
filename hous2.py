@@ -56,7 +56,7 @@ X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.fit_transform(X_test)
 
 from sklearn.ensemble import RandomForestRegressor
-regressor = RandomForestRegressor(n_estimators = 200)
+regressor = RandomForestRegressor(n_estimators = 20)
 regressor.fit(X_train, Y_train)
 
 Y_pred = regressor.predict(X_test)
